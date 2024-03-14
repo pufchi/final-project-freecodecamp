@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.01);
+    }
+    ::-webkit-scrollbar-thumb {
+    background-color: #b8a09e;
+    -webkit-border-radius: 5ex; 
+    border: 1px dotted #d8c6c2; 
+    }
+    
+
+
+body {
+    margin: 0;
+    line-height: 1.4;
+}
+
+:root {
+    --pink: #dbc7c7b4;
+    --white: #ffffff;
+    --pink2: #bdabaa;
+}
+
+/* nav bar */
+
+#navbar {
+    background: var(--white);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    border-radius: 90px;
+    position: fixed;
+    top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    z-index: 4;
+}
+.nav-links {
+    text-align: right;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links a:hover {
+   background: var(--pink);
+   color: var(--white);
+   border-radius: 7px;
+}
+
+.nav-links a {
+    font-size: 18px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--pink2);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold ;
+}
+ul {
+    list-style: none;
+}
+
+/* end */
+
+/* welcome section */
+#welcome-section {
+    font-size: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    display: flex;
+    background-color: var(--pink);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--pink2);
+    flex-direction: column;
+    padding: 0;
+    background-image: url(https://i.imgur.com/UoRFH0K.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+/* end */
+
+/* projects */
+
+#img1 {
+    display: block;
+    margin: 10px auto 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#img2 {
+    display: block;
+    margin: 10px auto 20px; 
+    width: 367px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#welcome-section p {
+    font-size: 18px;
+    padding-top: 0;
+    font-family: "Courgette", cursive;
+    color: var(--pink2);
+ }
+
+ #projects {
+    background: var(--pink2);
+    justify-content: center;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+ }
+
+.project-tile {
+    margin: 10px 18px;
+    margin-top: 50px;   
+}
+
+.redirect {
+    text-decoration: none;
+    color: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+ }
+
+
+ h2 {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+    padding-bottom: 45px;
+ }
+
+ .header {
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 0;
+    font-family: "Courgette", cursive;
+ }
+
+/* end */
+ 
+/* profile */
+
+#profile {
+    font-size: 25px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    display: flex;
+    background-color: var(--pink);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    color: var(--pink2);
+    flex-direction: column;
+    padding: 0;
+    background-image: url(https://i.imgur.com/BmsxTHr.png);
+    background-repeat: repeat;
+    background-position: cover;
+}
+
+#profile p {
+    font-size: 15px;
+    padding-top: 0;
+    font-family: "Courgette", cursive;
+    color: var(--pink2)
+ }
+
+
+ .icons {
+    color: var(--pink2);
+}
+
+
+/* end */
+
+ @media screen and (max-width: 1000px) and (orientation: portrait){
+    #everything { position: absolute;
+      zoom: 160%;
+      left:650px; top:-60px;
+      transform: rotate(90deg);
+    }}
+  
+    @media screen and (max-width: 1000px) and (orientation: landscape){
+    #everything { position: absolute;
+      zoom: 95%;
+      left:-105px; top:-35px;
+    }}
+  
+    @media screen and (min-width: 2000px) and (orientation: landscape){
+    #everything { position: absolute;
+    zoom: 100%;
+    }}
+  
+    @media screen and (min-width: 1700px) and (orientation: landscape){
+    #everything { position: absolute;
+      zoom: 130%;
+      left:60px; top:40px; 
+    }}
+  
+    @media screen and (min-width: 3000px) and (orientation: landscape){
+    #everything { position: absolute;
+      zoom: 260%;
+      left:100px; top:40px;
+    }}
+  
+
+ /* i apologize if there are any silly mistakes */
